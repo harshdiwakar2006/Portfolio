@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="icon" href="b6cfe819-33e9-466c-935e-de7358443839.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style_updated.css">
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">Portfolio</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-image reveal">
+            <img src="5e589b49-69c7-4bcc-bfe9-9ff888a92ee6.png" alt="Profile Photo">
+        </div>
+    <div class="hero-content reveal">
+        <h1>Hello, I'm <span>HARSH DIWAKAR</span></h1>
+        <p>Computer Science Student | Java Developer | Python Developer | Problem Solver</p>
+
+        <a href="resume.pdf" download class="btn">
+            Download Resume
+        </a>
+
+        <a href="#projects" class="btn">
+            View Projects
+        </a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about fade-up reveal">
+        <p>
+            I am a passionate Computer Science student interested in
+            Software Development, Data Structures & Algorithms,
+            Web Development, and Artificial Intelligence.
+            I enjoy building real-world projects and solving coding
+            challenges to improve my problem-solving skills.
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills reveal">
+        <div class="skill">Java</div>
+        <div class="skill">DSA</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Git</div>
+        <div class="skill">GitHub</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid reveal">
+
+        <div class="card">
+            <h3>Student Management System</h3>
+            <p>
+                Java-based application to manage student records,
+                attendance, and performance.
+            </p>
+            <a href="#" class="btn">Source Code</a>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>
+                Responsive portfolio built using HTML, CSS and JavaScript.
+            </p>
+            <a href="#" class="btn">Live Demo</a>
+        </div>
+
+        <div class="card">
+            <h3>Weather Application</h3>
+            <p>
+                Real-time weather forecasting application using API integration.
+            </p>
+            <a href="#" class="btn">Source Code</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- GitHub -->
+<section id="github">
+    <h2 class="section-title">GitHub</h2>
+
+    <div class="github-box reveal">
+        <h3>My Open Source Work</h3>
+
+        <p>
+            Explore my repositories, coding projects, and contributions.
+        </p>
+
+        <br>
+
+        <a href="https://github.com/harshdiwakar2006"
+           target="_blank"
+           class="btn">
+           Visit GitHub
+        </a>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact reveal">
+        <p>📧 harshdiwakar7722gmail.com</p>
+        <a href="https://www.linkedin.com/in/harsh-diwakar-013b153a8/"
+           target="_blank"
+           class="link">
+           https://www.linkedin.com/in/harsh-diwakar-013b153a8/
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Harsh Diwakar | Built with HTML & CSS
+</footer>
+<script>
+const reveals=document.querySelectorAll(".reveal");
+function reveal(){
+ const wh=window.innerHeight;
+ reveals.forEach(el=>{const top=el.getBoundingClientRect().top; if(top<wh-100){el.classList.add("active");}})
+}
+window.addEventListener("scroll",reveal); reveal();
+</script>
+</body>
+</html>
